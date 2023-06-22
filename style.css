@@ -19,6 +19,7 @@ img {
 }
 body {
   min-height: 100vh;
+  padding-inline: 1rem;
   display: grid;
   place-items: center;
   font-family: "Roboto", sans-serif;
@@ -47,6 +48,7 @@ body {
   background-image: url("./public/pattern-divider-mobile.svg");
 }
 .advice__gen {
+  border: none;
   padding: 1.125rem;
   background-color: var(--clr-accent);
   border-radius: 50%;
@@ -57,4 +59,9 @@ body {
 }
 .advice__gen img {
   width: 1.25rem;
+}
+@media (width>560px) {
+  .break {
+    background-image: url("./public/pattern-divider-desktop.svg");
+  }
 }
