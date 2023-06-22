@@ -17,3 +17,5 @@ const getAdvice = async () => {
 advicegen.addEventListener("click", () => {
   getAdvice();
 });
+import themeSwitcher from "./components/themeToggle";
+themeSwitcher();
