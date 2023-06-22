@@ -28,7 +28,7 @@ img {
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
   padding-inline: 1rem;
   display: grid;
   place-items: center;
@@ -56,7 +56,7 @@ body {
   height: 1rem;
   background-position: 50%;
   background-repeat: no-repeat;
-  background-image: url("./pattern-divider-mobile.svg");
+  background-image: url("./public/pattern-divider-mobile.svg");
 }
 .advice__gen {
   border: none;
@@ -84,5 +84,10 @@ body {
 @media (width>560px) {
   .break {
     background-image: url("./public/pattern-divider-desktop.svg");
+  }
+  .theme__toggle {
+    width: 2rem;
+    bottom: 25px;
+    right: 40px;
   }
 }
