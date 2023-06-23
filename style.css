@@ -4,12 +4,14 @@
   --clr-dark: #313a49;
   --clr-accent: #53ffab;
   --clr-light: #b1c4cb;
+  --clr-theme: #b2bcb5;
 }
 .light {
   --clr-bg: #ffffff;
   --clr-dark: #53ffab;
   --clr-light: #000000;
   --clr-accent: #955fff;
+  --clr-theme: #f7fb02;
 }
 .hide {
   display: none;
@@ -67,6 +69,11 @@ body {
   right: 50%;
   bottom: -10%;
   transform: translateX(50%);
+  transition: box-shadow 400ms ease;
+}
+.advice__gen:hover,
+.advice__gen:focus-visible {
+  box-shadow: -1px -1px 20px var(--clr-accent);
 }
 .advice__gen img {
   width: 1.25rem;
@@ -79,6 +86,10 @@ body {
   position: fixed;
   bottom: 15px;
   right: 15px;
+}
+.theme__toggle:hover,
+.theme__toggle:focus-visible {
+  filter: drop-shadow(0px 0px 8px var(--clr-theme));
 }
 
 @media (width>560px) {
